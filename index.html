@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Encriptador de textos">
+    <meta name="author" content="Josue Vadivia">
+
+  <title>Josue Valdivia - Encriptador</title>   
+
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    
+</head>
+
+<body>
+
+    <div class="cont_all">
+        <header class="encabezado">
+            <img src="./img/Logo.png" alt="logo alura" class="head_logo">
+            <h2 class="head_title">Encriptador</h2>
+        </header>
+
+        <section class="container01">
+            <textarea class="enter_text" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="Por favor, ingresa aquí tu mensaje" autofocus></textarea>
+            <div class="information">
+                <p class="information_p">solo letras minusculas y sin acentos </p>
+                <img src="./img/Mark.svg" alt="signo de exclamacion" class="information_imag">
+            </div>
+            <div class="cont_btn">
+                <button class="btn btn_encriptar" id="encriptar">Encriptar</button>
+                <button class="btn btn_desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="result">
+            <textarea style="display:none;" class="result_text" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <div id="ocultar">
+                <img src="./img/Muñeco.webp" alt="Muneco buscando con lupa" class="hide_dummie">
+                <h2 class="hide_title">No se encontro el mensaje</h2>
+                <p class="hide_p">Ingrese el mensaje a encriptar o desencriptar</p>
+            </div>
+            <div class="cont_btn_copiar">
+                <button class="btn btn_copiar" id="copiar" hidden>Copiar</button>
+            </div>
+        </section>
+
+        <footer class="footer_container">
+
+            <p>Challenge Oracle Next One <span> - Por Josue Valdivia - México </span></p>
+        </footer>
+    </div>
+</body>
+
+<script type="text/javascript" src="./js/script.js"></script>
+
+</html>
